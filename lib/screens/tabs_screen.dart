@@ -28,24 +28,17 @@ class _TabsScreenState extends State<TabsScreen> {
   }
 
   TabBar get _tabBar => const TabBar(
+        labelColor: Colors.orange,
+        unselectedLabelColor: Colors.grey,
         tabs: [
           Tab(
-            child: Text(
-              'DATA',
-              style: TextStyle(color: Colors.grey),
-            ),
+            child: Text('DATA'),
           ),
           Tab(
-            child: Text(
-              'VOICE',
-              style: TextStyle(color: Colors.grey),
-            ),
+            child: Text('VOICE'),
           ),
           Tab(
-            child: Text(
-              'SMS',
-              style: TextStyle(color: Colors.grey),
-            ),
+            child: Text('SMS'),
           ),
         ],
       );
@@ -53,7 +46,7 @@ class _TabsScreenState extends State<TabsScreen> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      initialIndex: 1,
+      initialIndex: 0,
       length: 3,
       child: Scaffold(
         appBar: AppBar(

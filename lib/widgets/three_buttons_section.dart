@@ -9,9 +9,9 @@ class ButtonSection extends StatelessWidget {
         onPrimary: Colors.white,
         primary: Theme.of(ctx).primaryColor,
       ),
-      child: const Text(
-        'Buy Data Add-On',
-        style: TextStyle(fontSize: 11),
+      child: Text(
+        buttonName,
+        style: const TextStyle(fontSize: 11),
       ),
       onPressed: () {},
     );
